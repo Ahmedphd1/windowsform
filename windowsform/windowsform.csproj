@@ -1,0 +1,165 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CC86E45D-1897-49E1-807F-A1CD081EE0DD}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>windowsform</RootNamespace>
+    <AssemblyName>windowsform</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="DBAccess.cs" />
+    <Compile Include="hovedmenu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="hovedmenu.Designer.cs">
+      <DependentUpon>hovedmenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="km_indput.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="km_indput.Designer.cs">
+      <DependentUpon>km_indput.cs</DependentUpon>
+    </Compile>
+    <Compile Include="km_oplysninger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="km_oplysninger.Designer.cs">
+      <DependentUpon>km_oplysninger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opretbruger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opretbruger.Designer.cs">
+      <DependentUpon>opretbruger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="opretbrugerbil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="opretbrugerbil.Designer.cs">
+      <DependentUpon>opretbrugerbil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="rette.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="rette.Designer.cs">
+      <DependentUpon>rette.cs</DependentUpon>
+    </Compile>
+    <Compile Include="retteoplysninger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="retteoplysninger.Designer.cs">
+      <DependentUpon>retteoplysninger.cs</DependentUpon>
+    </Compile>
+    <Compile Include="tilføjbil.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="tilføjbil.Designer.cs">
+      <DependentUpon>tilføjbil.cs</DependentUpon>
+    </Compile>
+    <Compile Include="udtræk.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="udtræk.Designer.cs">
+      <DependentUpon>udtræk.cs</DependentUpon>
+    </Compile>
+    <Compile Include="udtrækoplysninger.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="udtrækoplysninger.Designer.cs">
+      <DependentUpon>udtrækoplysninger.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="hovedmenu.resx">
+      <DependentUpon>hovedmenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="km_indput.resx">
+      <DependentUpon>km_indput.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="km_oplysninger.resx">
+      <DependentUpon>km_oplysninger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="opretbruger.resx">
+      <DependentUpon>opretbruger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="opretbrugerbil.resx">
+      <DependentUpon>opretbrugerbil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="rette.resx">
+      <DependentUpon>rette.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="retteoplysninger.resx">
+      <DependentUpon>retteoplysninger.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="tilføjbil.resx">
+      <DependentUpon>tilføjbil.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="udtræk.resx">
+      <DependentUpon>udtræk.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="udtrækoplysninger.resx">
+      <DependentUpon>udtrækoplysninger.cs</DependentUpon>
+    </EmbeddedResource>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
