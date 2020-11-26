@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+
             this.retteoplysninger_tilbage = new System.Windows.Forms.Button();
             this.retteoplysninger_label = new System.Windows.Forms.Label();
             this.retteoplysninger_richtext = new System.Windows.Forms.RichTextBox();
@@ -49,7 +50,6 @@
             this.retteoplysninger_tilbage.TabIndex = 10;
             this.retteoplysninger_tilbage.Text = "Tilbage";
             this.retteoplysninger_tilbage.UseVisualStyleBackColor = true;
-            this.retteoplysninger_tilbage.Hide();
             // 
             // retteoplysninger_label
             // 
@@ -117,6 +117,7 @@
             this.retteoplysninger_retbruger.TabIndex = 18;
             this.retteoplysninger_retbruger.Text = "Ret bruger";
             this.retteoplysninger_retbruger.UseVisualStyleBackColor = true;
+            this.retteoplysninger_retbruger.Click += new System.EventHandler(this.retteoplysninger_retbruger_Click);
             // 
             // retteoplysninger_sletbruger
             // 

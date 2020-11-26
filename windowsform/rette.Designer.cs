@@ -46,9 +46,9 @@
             // 
             // rette_navn_eller_nummerplade_text
             // 
-            this.rette_navn_eller_nummerplade_text.Location = new System.Drawing.Point(109, 66);
+            this.rette_navn_eller_nummerplade_text.Location = new System.Drawing.Point(99, 66);
             this.rette_navn_eller_nummerplade_text.Name = "rette_navn_eller_nummerplade_text";
-            this.rette_navn_eller_nummerplade_text.Size = new System.Drawing.Size(161, 20);
+            this.rette_navn_eller_nummerplade_text.Size = new System.Drawing.Size(221, 20);
             this.rette_navn_eller_nummerplade_text.TabIndex = 6;
             this.rette_navn_eller_nummerplade_text.Text = "Indtast navn eller nummerplade";
             // 
